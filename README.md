@@ -11,12 +11,12 @@ Pour chaque phalange, il y a un tendon fléchisseur situé du côté intérieur,
 De nombreux autres tendons sont présents dans la main, mais ceux-ci sont les plus importants pour notre projet.  
 Pour reproduire plus fidèlement une main biologique, il faudrait deux tendons fléchisseurs (et deux moteurs-muscles) pour chaque doigt. Cependant, il est plus simple pour l’instant de se limiter à un seul moteur-muscle et une seule paire de tendons pour chaque doigt.
 Pour fermer le doigt, le moteur tourne de manière à tirer sur le tendon fléchisseur et à détendre le tendon extenseur, ce qui plie le doigt. En tournant le moteur dans l’autre sens, le doigt s’ouvre.
-[insert schéma]
+<!-- insert schéma-->
 
 # Difficultés rencontrées et solutions apportées
 ## Choix de l’architecture
 Chaque doigt est composé de 3 phalanges identiques (à la taille près), sauf pour le pouce qui n’a que 2 phalanges. Elles sont reliées par des articulations pouvant se plier de 60°. Un tendon passe à l'intérieur des phalanges dans des tubes prévus à cet effet. Les doigts sont attachés à une paume fixe sans fonction mécanique, le pouce étant incliné par rapport aux autres doigts. Les tendons des doigts sont prolongés à travers la paume, et passent par le poignet pour arriver aux moteurs, situés au niveau de l’avant bras. Ces moteurs sont des servomoteurs (capables de s’orienter précisément vers une position entre 0 et 180°), et contrôlés par une carte Arduino.
-[insert schémas]
+<!-- insert schéma-->
 
 ## Choix des méthodes de fabrication
 Les articulations sont constituées de tubes pivotant autour d’un cure-dent, à la manière d’une charnière.  
@@ -27,15 +27,23 @@ La paume est imprimée en 3D en PLA, ce qui est moins précis mais permet d’im
 ## Résistance
 Avec notre premier prototype, la force nécessaire pour plier et déplier le doigt était beaucoup trop importante. Afin d'y remédier, nous avons éloigné les tendons de l'axe central. Ainsi, le couple exercé sur les phalanges est maximisé, ce qui diminue la force nécessaire pour plier ou déplier le doigt.  
 De plus, nous avons creusé les phalanges, pour minimiser la longueur des tubes dans lesquels coulissent les tendons. Cela a eu pour effet de rendre la flexion et l'extension du doigt beaucoup plus faciles. Notre interprétation est que les frottements sont importants à l'intérieur du tube, et donc que creuser les phalanges a permis de limiter ces frottements.  
-un des premiers prototypes, non creusé:
-https://user-images.githubusercontent.com/80780126/158031367-0750b6ee-ce1f-4dc1-80ba-525d7af18ad5.mp4
+  
+un des premiers prototypes, non creusé:  
+
+https://user-images.githubusercontent.com/80780126/158057855-3dfe5ac6-8ccf-417b-b1d2-d2896950691f.mp4
+
 version creusée:
-https://user-images.githubusercntent.com/80780126/158031412-43b26afa-74a1-4b68-b659-44154db80337.mp4
-https://user-images.githubusercontent.com/80780126/158031391-596d8de4-aba3-4d22-87f4-58c3147e7e77.mp4
+
+https://user-images.githubusercontent.com/80780126/158057845-7c2cb7db-0f5b-4b4f-a2d3-dff57d0a04f6.mp4
+
+
+https://user-images.githubusercontent.com/80780126/158057828-58122a84-5a8c-4427-a4ee-840eac7bf1b1.mp4
+  
 
 ## Asymétrie
-Nous avons remarqué qu'avec le prototype que nous avions à ce stade, il était impossible de tendre les tendons correctement: s'ils étaient tendus quand le doigt était déplié, le tendon extenseur était détendu quand le doigt était plié. Nous avons réalisé que cela était dû à l'éloignement des tendons à l'axe central: ils étaient jusque là placés à la même distance, mais en réalité le tendon fléchisseur aurait dû être moins éloigné d'un facteur cos(30°) pour que la distance dont le fil doit être rétracté (notée $\Delta$L sur le schéma) soit la même des deux côtés.
+Nous avons remarqué qu'avec le prototype que nous avions à ce stade, il était impossible de tendre les tendons correctement: s'ils étaient tendus quand le doigt était déplié, le tendon extenseur était détendu quand le doigt était plié. Nous avons réalisé que cela était dû à l'éloignement des tendons à l'axe central: ils étaient jusque là placés à la même distance, mais en réalité le tendon fléchisseur aurait dû être moins éloigné d'un facteur cos(30°) pour que la distance dont le fil doit être rétracté (notée ΔL sur le schéma) soit la même des deux côtés.
 ![image](https://user-images.githubusercontent.com/80780126/158038113-9be2ada1-6aff-4f4f-887b-9ff3cfda53d6.png)
 
 ## Tension
-Tendre les tendons s'est révélé être plus difficile que prévu. En effet, il est très difficile de coller le fil au moteur en le maintenant tendu. Nous avons donc décidé de mettre en place un système pour pouvoir régler la position du moteur après avoir collé les fils.
+Tendre les tendons s'est révélé être plus difficile que prévu. En effet, il est très difficile de coller le fil au moteur en le maintenant tendu. Nous avons donc décidé de mettre en place un système pour pouvoir régler la position du moteur après avoir collé les fils.  
+<!-- insert photo -->
