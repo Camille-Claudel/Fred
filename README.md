@@ -58,3 +58,14 @@ Bien que le branchement des servomoteurs soit relativement simple en principe, l
 Pour réduire le nombre de fils nécessaires, nous avons alors conçu et fabriqué un circuit imprimé. On utilise pour cela une plaque en plastique recouverte d'une couche de cuivre, sur laquelle on imprime en 3D (en résine) le tracé du circuit voulu. Le motif ainsi formé servira de masque. Ensuite, on dissout le cuivre non masqué avec une solution d'acide acétique (vinaigre), de peroxyde d'hydrogène (eau oxygénée), et de chlorure de sodium (sel de table). On obtient alors un circuit imprimé sur lequel on soude des connecteurs qui permettent de brancher les servomoteurs directement, sans passer par un fil.
 ![image](https://user-images.githubusercontent.com/80780126/158889437-a99add68-dc58-4586-a593-8c4b33200b60.png)
 ![image](https://user-images.githubusercontent.com/80780126/158889751-6afa8023-91dd-40cd-b468-640a40dded76.png)
+
+## Résultat final
+Voici une vidéo de la naissance de Fred le 19 mars vers minuit 30:  
+
+https://user-images.githubusercontent.com/80780126/160250168-33cd308e-4ac8-43aa-821d-4a71da2489f3.mp4
+
+Et voici deux vidéos de Fred aux portes ouvertes du lycée le 19 mars vers 10 heures:
+
+https://user-images.githubusercontent.com/80780126/160250184-eb81a975-74f4-4f95-affd-3359798cb3a0.mp4
+
+https://user-images.githubusercontent.com/80780126/160250190-fc86b303-d6f0-4ee5-a104-70d04af33471.mp4
