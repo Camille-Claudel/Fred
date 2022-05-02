@@ -1,4 +1,7 @@
 # Introduction
+
+https://user-images.githubusercontent.com/80780126/160250190-fc86b303-d6f0-4ee5-a104-70d04af33471.mp4 
+
 Ce projet a pour but la création d'une main robotique, en s'inspirant du fonctionnement d'une main humaine.
 
 ## Objectifs
@@ -28,17 +31,8 @@ La paume est imprimée en 3D en PLA, ce qui est moins précis mais permet d’im
 Avec notre premier prototype, la force nécessaire pour plier et déplier le doigt était beaucoup trop importante. Afin d'y remédier, nous avons éloigné les tendons de l'axe central. Ainsi, le couple exercé sur les phalanges est maximisé, ce qui diminue la force nécessaire pour plier ou déplier le doigt.  
 De plus, nous avons creusé les phalanges, pour minimiser la longueur des tubes dans lesquels coulissent les tendons. Cela a eu pour effet de rendre la flexion et l'extension du doigt beaucoup plus faciles. Notre interprétation est que les frottements sont importants à l'intérieur du tube, et donc que creuser les phalanges a permis de limiter ces frottements.  
   
-un des premiers prototypes, non creusé:  
-
-https://user-images.githubusercontent.com/80780126/158057855-3dfe5ac6-8ccf-417b-b1d2-d2896950691f.mp4
-
-version creusée:  
-
-https://user-images.githubusercontent.com/80780126/158057845-7c2cb7db-0f5b-4b4f-a2d3-dff57d0a04f6.mp4
-
-
-https://user-images.githubusercontent.com/80780126/158057828-58122a84-5a8c-4427-a4ee-840eac7bf1b1.mp4
-  
+un des premiers prototypes, non creusé (gauche) VS version creusée (droite):
+![image_1650969428561138](https://user-images.githubusercontent.com/80780126/166290228-b8c0ac4a-bfe5-4ac4-b35d-43d826ed0a8a.png)
 
 ## Asymétrie
 Nous avons remarqué qu'avec le prototype que nous avions à ce stade, il était impossible de tendre les tendons correctement: s'ils étaient tendus quand le doigt était déplié, le tendon extenseur était détendu quand le doigt était plié. Nous avons réalisé que cela était dû à l'éloignement des tendons à l'axe central: ils étaient jusque là placés à la même distance, mais en réalité le tendon fléchisseur aurait dû être moins éloigné d'un facteur cos(30°) pour que la distance dont le fil doit être rétracté (notée ΔL sur le schéma) soit la même des deux côtés.  
